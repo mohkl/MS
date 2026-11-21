@@ -3,10 +3,10 @@ plugins {
     id("org.jetbrains.kotlin.android")
 }
 android {
-    namespace = "com.rfm.shr"
+    namespace = "com.rfm.ms"
     compileSdk = 34
     defaultConfig {
-        applicationId = "com.rfm.shr"
+        applicationId = "com.rfm.ms"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -17,4 +17,7 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions { jvmTarget = "17" }
+}
+dependencies {
+    implementation("androidx.core:core-ktx:1.13.1")
 }
